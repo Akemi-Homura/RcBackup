@@ -12,6 +12,7 @@ echo "[$proname `date`] backup config files"
 
 vimdirs='vim'
 zshdirs='zsh'
+tmuxdirs='tmux'
 workdir='.'
 
 if [ $# -gt 0 ]
@@ -34,6 +35,7 @@ function checkdir(){
 
 checkdir $vimdirs
 checkdir $zshdirs
+checkdir $tmuxdirs
 
 echo "[$proname `date`] check dirctories done"
 
@@ -41,6 +43,7 @@ echo "[$proname `date`] check dirctories done"
 cp ~/{.vimrc,.vimrc.bundles} $vimdirs/
 cp ~/.vim/.ycm_extra_conf.py $vimdirs/
 cp ~/.zshrc $zshdirs/
+cp ~/.tmux.conf $tmuxdirs/
 
 echo "[$proname `date`] copy config files done"
 
