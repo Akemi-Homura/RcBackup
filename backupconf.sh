@@ -47,9 +47,10 @@ cp ~/.tmux.conf $tmuxdirs/
 echo "[$proname `date`] copy config files done"
 
 # upload
-cmmsg="backup config files "
-git add .
-git commit -a -m "$cmmsg" > /dev/null >> /dev/null
-git push > /dev/null >> /dev/null
+#  cmmsg="backup config files "
+#  git add .
+#  git commit -a -m "$cmmsg" > /dev/null >> /dev/null
+#  git push > /dev/null >> /dev/null
+nohup sh upload.sh
 
 echo "[$proname `date`] backup config files done!"
