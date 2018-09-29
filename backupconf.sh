@@ -28,7 +28,6 @@ echo "[$proname `date`] check dirctores now"
 function checkdir(){
     if [ ! -e $1 ]
     then
-        echo mkdir $1
         mkdir $1
     fi
 }
