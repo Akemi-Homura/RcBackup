@@ -47,7 +47,7 @@ echo "[$proname `date`] copy config files done"
 # upload
 cmmsg="backup config files "
 git add .
-git commit -a -m "$cmmsg" > /dev/null
-git push > /dev/null
+git commit -a -m "$cmmsg"
+git push
 
 echo "[$proname `date`] backup config files done!"
