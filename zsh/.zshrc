@@ -79,6 +79,7 @@ autoload -U compinit && compinit -u
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export TZ='Asia/Shanghai'
 export EDITOR=vim
 
 # Preferred editor for local and remote sessions
