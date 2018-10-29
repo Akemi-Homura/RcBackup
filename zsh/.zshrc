@@ -82,6 +82,12 @@ export LANG=en_US.UTF-8
 export TZ='Asia/Shanghai'
 export EDITOR=vim
 
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then                                                      
+     export TERM='xterm-256color'
+else
+     export TERM-'xterm-color'
+fi
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
